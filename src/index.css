@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Rubik+Mono+One&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gradient {
+    background: linear-gradient(310deg,theme('colors.rose.300'),theme('colors.pink.200'));
+    background-size: 100% 100%;
+    @apply bg-opacity-10;
+}
+
+a {
+    @apply text-purple-500 hover:underline;
+}
+
+h2 {
+    text-align: center;
+}
