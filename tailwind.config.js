@@ -4,7 +4,7 @@ module.exports = {
     extend: {
       fontFamily: {
         display: ['"Rubik Mono One"', 'Arial', 'sans-serif'],
-        sans: ['"Open Sans"', 'Helvetica', 'Arial', 'sans-serif'],
+        sans: ['Montserrat', '"Open Sans"', 'Helvetica', 'Arial', 'sans-serif'],
       },
     },
   },

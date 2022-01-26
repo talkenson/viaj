@@ -1,19 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Rubik+Mono+One&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --vh: 1vh;
+}
+
 .gradient {
     background: linear-gradient(310deg,theme('colors.rose.300'),theme('colors.pink.200'));
-    background-size: 100% 100%;
+    background-size: cover;
     @apply bg-opacity-10;
 }
 
+.fix-gradient {
+    background-attachment: fixed;
+}
+
 a {
-    @apply text-purple-500 hover:underline;
+    @apply text-white hover:underline;
 }
 
 h2 {
     text-align: center;
+}
+
+.hovering-icon {
+    @apply transform hover:-translate-y-1 transition-transform;
+}
+.personCard {
+    @apply bg-white/20 py-4 px-2 rounded-xl backdrop-blur-sm transform hover:-translate-y-0.5 hover:shadow-md transition-all;
+}
+
+.screenHeight {
+    height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
 }
