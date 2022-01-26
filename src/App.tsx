@@ -79,7 +79,7 @@ const App = () => {
         <div className='flex flex-col space-y-8'>
           <h2 className='font-display text-xl'>Ставки VIAJ</h2>
           {stakes.map((v, i) => (
-            <div className={`flex flex-col gap-y-3 items-center`}>
+            <div className={`flex flex-col space-y-3 items-center`}>
               <v.icon className='h-16 w-16 shrink-0 ' />
               <span className={`w-full text-center text-md`}>
                 {v.text}
@@ -89,7 +89,7 @@ const App = () => {
         </div>
         <div className='flex flex-col space-y-4'>
           <h2 className='font-display text-xl'>Стороны VIAJ</h2>
-          <div className='flex items-center justify-between pt-2 gap-x-3 group'>
+          <div className='flex items-center justify-between pt-2 space-x-3 group'>
             <a
               href='https://t.me/talkenson'
               target='_blank'
@@ -111,7 +111,7 @@ const App = () => {
         <div className='flex flex-col space-y-8'>
           <h2 className='font-display text-xl'>Условия VIAJ</h2>
           {goalsMe.map((v, i) => (
-            <div className={`flex flex-col gap-y-3 items-center`}>
+            <div className={`flex flex-col space-y-3 items-center`}>
               <v.icon className='h-16 w-16 shrink-0 ' />
               <span className={`w-full text-center text-md`}>
                 {v.text}
@@ -120,7 +120,7 @@ const App = () => {
           ))}
           <hr className='border-white opacity-40  w-5/6 mx-auto' />
           {goalsHer.map((v, i) => (
-            <div className={`flex flex-col gap-y-3 items-center`}>
+            <div className={`flex flex-col space-y-3 items-center`}>
               <v.icon className='h-16 w-16 shrink-0 ' />
               <span className={`w-full text-center text-md`}>
                 {v.text}
